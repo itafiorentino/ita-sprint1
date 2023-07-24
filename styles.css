@@ -1,0 +1,99 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.parent {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header {
+    background: #000;
+    display: flex;
+    flex-flow: column nowrap; 
+}
+
+    .menu {
+        background: #982176;
+        display: flex;
+        flex-flow: nowrap;
+        margin-bottom: 5px;
+    }
+        .logo {
+            background: #F11A7B;
+            flex: 1 1 auto;
+        }
+        .nav {
+            background: #F11A7B;
+            flex: 5 1 auto;
+        }
+        .socials {
+            background: #F11A7B;
+            flex: 1 1 auto;
+        }
+
+
+
+    .banner {
+        background: #982176;
+        margin-top: 5px;
+    }
+        .title-h1 {
+            background: #F11A7B;
+        }
+
+.main {
+    background: #000;
+    display: flex;
+    flex-flow: row;
+}
+
+    .section {
+        background: #982176;
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .aside {
+        background: #982176;
+        flex: 1 1 auto;
+    }
+
+        .art {
+            background: #F11A7B;
+            flex: 1 1 40%;
+        }
+
+        .section-text {
+            background: #1acdf1;
+            flex: 1 1 100%;
+        }
+
+.footer {
+    background: #000;
+}
+    .footer-nav {
+        background: #982176;
+    }
+
+
+@media all and (max-width: 800px){
+    .main {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 480px){
+    .main {
+        flex-direction: column;
+    }
+    .section {
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+    }
+}
